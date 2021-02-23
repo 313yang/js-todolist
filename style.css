@@ -1,0 +1,107 @@
+@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.kopubbatang * {
+ font-family: 'KoPub Batang', serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    animation: fadeIn 0.8s ease-in-out;
+}
+body {
+    font-family: 'KoPub Batang', serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(61, 17, 102);
+    text-shadow: 1px 1px 4px rgba(48, 0, 65, 0.8);
+}
+main {
+    position: absolute;
+    top: 100px;
+}
+h1 {
+    font-size:90px ;
+}
+h4 {
+    font-size: 26px;
+}
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+input {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+  }
+  input::placeholder {
+    color: white;
+    text-align: center;
+  }
+input:active,
+input:focus {
+    outline: none;
+}
+ul {
+    text-align: start;
+    margin-top: 50px;
+    font-family: 'S-CoreDream-5Medium';
+}
+li {
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+button:focus,
+button:active    {
+    outline: none;
+
+}
+.js-weather {
+    font-size: 30px;
+    position: fixed;
+    left: 60px;
+    bottom: 40px;
+}
